@@ -1,0 +1,43 @@
+package saturday;
+
+import java.util.Scanner;
+
+public class QuantitySold
+{
+	
+	int productno;
+	int quantity;
+	double Retailprice1=22.50;
+	double Retailprice2=44.50;
+	double Retailprice3=9.98;
+	Scanner sc=new Scanner(System.in);
+	public void display() {
+		System.out.println("enter productno");
+		productno=sc.nextInt();
+		System.out.println("enter the quantity");
+		quantity=sc.nextInt();
+		switch(productno) {
+		case 1:
+			System.out.println("your total bill is :"+(Retailprice1*quantity));
+			break;
+		case 2:
+			System.out.println("your total bill is :"+(Retailprice2*quantity));
+			break;
+			
+		case 3:
+			System.out.println("your total bill is :"+(Retailprice3*quantity));
+			break;
+		default:
+			System.out.println("invalid");
+		}
+	}
+
+	public static void main(String[] args) 
+	{
+		
+		QuantitySold q=new QuantitySold();
+		q.display();
+		
+	}
+	
+}
