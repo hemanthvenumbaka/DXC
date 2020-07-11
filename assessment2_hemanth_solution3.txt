@@ -1,0 +1,110 @@
+package org.animals;
+
+public class Elephant {
+	String colour="Grey";
+	int weight=1000;
+	int age=25;
+	public void elephantDetails() {
+		System.out.println("Elephant colour is :"+colour);
+		System.out.println("Elephant weight is:"+weight);
+		System.out.println("Elephant age is :"+age);
+		}
+
+	public void isVegetarian() {
+		
+		System.out.println("Yes Elephant is vegetarian");
+	}
+public void canClimb() {
+	System.out.println("No Elephant cant climb");
+}
+public void getSound() {
+	System.out.println("Elephant sound is Trumpet");
+}
+}
+
+package org.animals;
+
+public class Lion {
+	String colour="Yellow";
+	int weight=190;
+	int age=15;
+	public void lionDetails() {
+		System.out.println("Lion colour is :"+colour);
+		System.out.println("Lion weight is:"+weight);
+		System.out.println("Lion age is :"+age);
+	}
+	public void isVegetarian() {
+		System.out.println(("No Lion is not vegetarian"));
+	}
+	public void canClimb() {
+		System.out.println("No Lion can't climb");
+	}
+	public void getSound() {
+		System.out.println("Lion will Roar");
+	}
+	
+
+}
+
+
+
+
+package org.animals;
+
+public class Monkey {
+	String colour="Brown";
+	int weight=50;
+	int age=10;
+
+	public void monkeyDetails() {
+		System.out.println("Monkey colour is :"+colour);
+		System.out.println("Monkey weight is:"+weight);
+		System.out.println("Monkey age is :"+age);
+		
+	}	
+public void isVegetarian() {
+	System.out.println("Yes Monkey is vegetarian");
+}
+public void canClimb() {
+	System.out.println( "Yes Monkey can climb");
+}
+public void getSound() {
+	System.out.println("Monkeys sound is screech");
+}
+}
+
+
+
+
+package zoo;
+import org.animals.*;
+
+public class VandalurZoo {
+	public static void main(String[] args) {
+		
+	    Lion li = new Lion();
+		li.lionDetails();
+		li.isVegetarian();
+		li.canClimb();
+		li.getSound();
+		
+		Monkey mo = new Monkey();
+		mo.monkeyDetails();
+		mo.isVegetarian();
+		mo.canClimb();
+		mo.getSound();
+		
+		Elephant ee = new Elephant();
+		ee.elephantDetails();
+		ee.isVegetarian();
+		ee.canClimb();
+		ee.getSound();
+		
+		
+	}
+
+}
+
+
+
+
